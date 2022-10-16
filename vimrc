@@ -539,7 +539,7 @@ nnoremap <leader>v V`}
 " w!! to sudo & write a file
 cmap w!! w !sudo tee >/dev/null %
 " ignore readonly
-set noro
+au BufEnter * set noro
 
 " kj 替换 Esc
 inoremap kj <Esc>
